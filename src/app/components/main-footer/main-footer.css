@@ -1,0 +1,93 @@
+.footer-Containerpage{
+     background-color: black;
+    color: white;
+}
+.footer-ContainerpageFlex{
+    display: flex;
+justify-content: space-around;
+align-items: center;
+}
+.iconsForNdmatrixHead{
+display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+.Footer-TermsPolicy{
+
+}
+.Footer-TermsPolicy li{
+list-style-type: none;
+padding: 10px;
+cursor: pointer;
+text-decoration: underline;
+}
+.Footer-contactDetails{
+    padding: 2rem 0;
+}
+.Footer-contactInfo{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 7px;
+    cursor: pointer;
+    font-weight: 600;
+}
+.Footer-icons{
+    display: flex;
+    gap: 20px;
+    padding: 0 2.5rem;
+}
+
+.FooterCopyRights{
+    /* width: 60%; */
+text-align: center;
+padding: 10px;
+}
+.Footer-AddressInfo li{
+    list-style-type: none;
+}
+.list-headingforfooter{
+        font-size: 20px;
+    color: rgb(127 164 235);
+    font-weight: 600;
+}
+.list-heading{
+    font-weight: 600;
+}
+.logoHeadingforfooter{
+    width:  120px;
+    height: 100%;
+}
+.logoHeadingforfooter img{
+    width:  100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.iconBtn {
+  background-color:rgb(95, 95, 95);
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 5px;
+  /* border-radius: 50%; Ensures it's a circle */
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.iconBtn i {
+  font-size: 18px;
+  color: #fff; /* Adjust for your background */
+  transition: color 0.3s ease;
+}
+
+.iconBtn:hover {
+  background-color: white;
+  transform: scale(1.1);
+}
+
+.iconBtn:hover i {
+  color: #000; /* Icon color on hover */
+}
