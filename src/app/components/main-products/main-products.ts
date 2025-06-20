@@ -1,6 +1,5 @@
 import { CommonModule } from '@angular/common';
 import { Component, ViewChild } from '@angular/core';
-import { Router } from '@angular/router';
 
 @Component({
   selector: 'main-products',
@@ -9,7 +8,6 @@ import { Router } from '@angular/router';
   styleUrl: './main-products.css'
 })
 export class MainProducts {
-constructor(private router:Router){}
 
 productCards=[
   {
@@ -24,22 +22,22 @@ productCards=[
 },
 {
  title:"practice question bank",
-  discription:`A flexible system where students can practice a wide range of questions, filter by topic and difficulty, and view detailed solutions and explanations.`,
+  discription:`A flexible system for practicing questions with filters by topic and difficulty, plus detailed solutions`,
   productImg:"images/otsImage.jpg"
 },
 {
  title:"study materials",
-  discription:`A digital notebook-like interface offering virtual study materials with features such as highlighting, bookmarking, personal notes, and search.`,
+  discription:`A digital notebook with virtual study materials, highlighting, bookmarking, notes, and search.`,
   productImg:"images/otsImage.jpg"
 },
 {
  title:"test generator",
-  discription:` A backend tool that allows automated generation of customized tests by selecting parameters like question type, topic, difficulty, and more.`,
+  discription:`A backend tool for automated creation of customized tests by selecting question type, topic, difficulty, and more.`,
   productImg:"images/otsImage.jpg"
 },
 {
  title:"learning management system",
-  discription:`A structured platform to manage courses, lessons, assignments, progress tracking, and engagement between instructors and students.`,
+  discription:`A platform to manage courses, lessons, assignments, progress, and instructor-student engagement.`,
   productImg:"images/otsImage.jpg"
 },
 {
@@ -49,17 +47,17 @@ productCards=[
 },
 {
  title:"admin portal",
-  discription:`  A robust backend platform for managing the entire academic workflow — including uploading tests, creating and assigning courses, managing test content, scheduling, and performance review tools.`,
+  discription:`A robust backend platform for managing tests, courses, scheduling, and performance reviews.`,
   productImg:"images/otsImage.jpg"
 },
 {
  title:"bundle project",
-  discription:` A unified ecosystem that combines all our major products—OTS, ORVL, PQB, SM, LMS, SMS—into a single platform for seamless use by institutes and learners.`,
+  discription:`A unified platform combining OTS, ORVL, PQB, SM, LMS, and SMS for seamless use by institutes and learners`,
   productImg:"images/otsImage.jpg"
 },
 {
  title:"cloud services & infrastracture",
- discription:`Tools and systems for deploying, scaling, and maintaining cloud-based applications using containerization, CI/CD, and monitoring services.`,
+ discription:`Tools for deploying, scaling, and maintaining cloud apps with containers, CI/CD, and monitoring.`,
   productImg:"images/otsImage.jpg"
 }
 ]

@@ -2,11 +2,16 @@
 <div class="header-logo">
     <img  src="images/nDMartrixLogo.jpg" alt="logo"/>
 </div>
-<div class="header-logins-flex">
-        <button  class="login-button" routerLink="/">Home</button>
-        <button  class="login-button" routerLink="/">About</button>
-        <button  class="login-button"routerLink="/Footerpage" >ContantUs</button>
-        <button  class="login-button" routerLink="/RegisterPage">Register</button>
+  <div class="hamburger" onclick="toggleMenu()">
+    <i class="fa-solid fa-bars"></i>
+  </div>
+<div class="header-logins-flex" id="navMenu" [ngClass]="{ 'active': isMenuOpen }">
+        <!-- <button  class="login-button" (click)="handleHomePage()">Home</button> -->
+        <button type="button" routerLink="/" class="login-button">Home</button>
+        <button  class="login-button" (click)="scrollToSection('productsPage')">About</button>
+        <button  class="login-button"(click)="scrollToSection('footerPage')" >ContactUs</button>
+        <!-- <button  class="login-button"  (click)="handleRegister()" >Register</button> -->
+        <button type="button" routerLink="/RegisterPage" class="login-button" >Register</button>
         <button  class="login-button" routerLink="/loginPage">Login</button>
 </div>
 

@@ -1,17 +1,24 @@
 
- 
+ <div class="mainProducts-container" id="productsPage">
         <div class="headingFor-porducts"><i class="fa-solid fa-diamond"></i><i class="fa-solid fa-diamond"></i><i class="fa-solid fa-diamond"></i><h2>Our Products</h2><i class="fa-solid fa-diamond"></i><i class="fa-solid fa-diamond"></i><i class="fa-solid fa-diamond"></i></div>
   
 <div class="products-cards-Container">
    
  
     <div class="cardsForFlex" *ngFor="let cards of productCards">
+         <div class="productsImgTitleInfo">
         <div class="imageForCards">
             <img [src]="cards.productImg" alt="cardImg1"/>
+            
         </div>
-        <div class="productsName">{{cards.title}}</div>
+         <div class="productsName">{{cards.title}}</div>
+        </div>
+          
+        <div class="productsInfo">
+       <div class="productsName">{{cards.title}}</div>
         <div class="productsDiscription">{{cards.discription}} </div>
-
+</div>
+  </div>
   </div>
      
     

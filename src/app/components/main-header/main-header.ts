@@ -1,15 +1,29 @@
+import { CommonModule, NgClass } from '@angular/common';
 import { Component } from '@angular/core';
-import { Router } from '@angular/router';
+import { Router, RouterLink } from '@angular/router';
 
 
 @Component({
   selector: 'main-header',
-  imports: [],
+  standalone: true,
+  imports: [RouterLink,CommonModule,NgClass],
   templateUrl: './main-header.html',
-  styleUrl: './main-header.css'
+    styleUrls: ['./main-header.css'] 
 })
 export class MainHeader {
-constructor(private router:Router){
-  
+  isMenuOpen = false;
+  constructor(private router:Router){}
+ scrollToSection(sectionId: string): void {
+    const element = document.getElementById(sectionId);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  }
+ toggleMenu(): void {
+  this.isMenuOpen = !this.isMenuOpen;
 }
+
+//   handleHomePage(){
+//  this.router.navigate(['/'])
+//   }
 }

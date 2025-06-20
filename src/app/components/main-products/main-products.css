@@ -1,24 +1,47 @@
 
-
+.mainProducts-container{
+  /* height: calc(100vh - 100px);
+  overflow: auto; */
+  position: relative;
+}
 .products-cards-Container{
     display: flex;
-gap: 2rem;
-margin: 1rem;
+gap: 1rem;
+margin: 2rem auto ;
 justify-content: center;
 flex-wrap: wrap;
+width: 80%;
+
+}
+.productsImgTitleInfo{
+transition: opacity 0.4s ease;
+display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 77px;
 }
 .imageForCards{
-    width: 180px;
+    width: 170px;
     height: auto;
+     
 }
 .imageForCards img{
     width: 100%;
     height: 100%;
-        border: 1px solid #d5d1d1;
+        border: 1px solid whitesmoke;
+ box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; 
+
         background-color: white;
+         object-fit: cover;
+           transition: transform 0.3s ease, opacity 0.4s ease;
 }
 .cardsForFlex{
-border: 1px solid rgb(172, 169, 169);
+/* box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; */
+background-color: whitesmoke;
+border: 1px solid whitesmoke;
     display: flex;
     flex-direction: column;
     gap: 1rem;
@@ -28,22 +51,40 @@ border: 1px solid rgb(172, 169, 169);
     width: 300px;
     box-sizing: border-box;
     border-radius: 10px;
-      transition: 
-    border-image-source 0.5s ease,
-    border-color 0.5s ease,
-    transform 0.3s ease,
-    box-shadow 0.3s ease;
+      position: relative;
+  height: 300px; /* or a fixed height that fits all content */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
   border-image-slice: 1;
   border-width: 3px;
+  margin: 2rem 0;
 }
-.cardsForFlex:hover{
-    border-color: transparent; /* still transparent because border-image takes over */
+.cardsForFlex:hover {
+  border-color: transparent;
   border-image-source: linear-gradient(100deg, rgb(124, 103, 247), rgb(88, 113, 228), blue, violet);
-   transform: scale(1.02);
- box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
+  transform: scale(1.02);
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
   background-color: rgb(240, 240, 248);
 }
+.cardsForFlex:hover .productsImgTitleInfo {
+  opacity: 0;
+}
 
+.cardsForFlex:hover .productsInfo {
+  opacity: 1;
+  transform: translateY(-100%);
+  display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+.productsInfo {
+  opacity: 0;
+  transform: translateY(0px);
+  transition: opacity 0.4s ease, transform 0.3s ease;
+  text-align: center;
+
+}
 .productsName{
     font-size: 20px;
     font-weight: 500;
@@ -68,6 +109,15 @@ border: 1px solid rgb(172, 169, 169);
 }
 .productsDiscription{
    width: 100%; 
+   padding: 0 1rem;
   white-space: normal;       
   overflow-wrap: break-word; 
+  word-spacing: 3px;
+      color: rgb(112, 111, 111);
+}
+@media(max-width:780px){
+   .products-cards-Container{
+gap: 1rem;
+margin: 1rem;
+}
 }

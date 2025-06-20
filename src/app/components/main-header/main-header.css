@@ -5,6 +5,10 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    /* margin: 0; */
 }
 .header-logo{
     width: 200px;
@@ -48,7 +52,31 @@
 .login-button:hover {
   border-color: transparent; /* still transparent because border-image takes over */
   border-image-source: linear-gradient(90deg, rgb(166, 75, 240), rgb(88, 113, 228), blue, violet);
-  border-radius: 18px;
   color: red;
 }
-
+.hamburger {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+}
+@media(max-width:780px){
+    .header-mainpage-Container{
+        box-shadow: none;
+    }
+    .header-logo{
+    width: 150px;
+    height: auto;
+}
+.login-button {
+  padding: 0px;
+  font-size: 12px;
+}
+}
+@media(max-width:600px){
+ .hamburger {
+    display: block;
+  }
+   .header-logins-flex.active {
+    display: flex;
+  }
+}

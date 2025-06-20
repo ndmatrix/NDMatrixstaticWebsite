@@ -1,14 +1,14 @@
+// app.ts
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import { MainHeader } from './components/main-header/main-header';
-import { MainFooter } from './components/main-footer/main-footer';
-import { MainProducts } from './components/main-products/main-products';
+import { NDMatrixHomePage } from './components/n-dmatrix-home-page/n-dmatrix-home-page';
 
 @Component({
   selector: 'app-root',
-  imports: [MainHeader,MainProducts,MainFooter],
+  standalone: true,
+  imports: [ NDMatrixHomePage, RouterOutlet],
   templateUrl: './app.html',
-  styleUrl: './app.css'
+  styleUrls: ['./app.css']
 })
 export class App {
   protected title = 'nDmatrix-Page';
