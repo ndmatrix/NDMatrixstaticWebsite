@@ -1,0 +1,114 @@
+
+#aboutPage{
+    scroll-margin-top: 100px;
+}
+.bannerImg{
+    width:100%;
+    /* height: 400px; */
+      position: relative;
+      background-color: rgba(24, 23, 23, 0.6);
+}
+.bannerImg img{
+    width: 100%;
+    height: auto;
+     object-fit: cover; 
+  display: block;
+  -webkit-mask-image: linear-gradient(rgba(46, 45, 45, 0.5));
+  mask-image: linear-gradient (rgb(31, 30, 30), rgba(34, 33, 33, 0.5));
+}
+.textForImg{
+    display: none;
+}
+.bannerImg:hover .textForImg{
+    display: block;
+     position: absolute;
+  top: 57%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 3rem;
+  font-weight: 600;
+color:whitesmoke;
+}
+
+.headingFor-about{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+     margin: 10px;
+}
+.headingFor-about h2{
+    color: rgb(14, 14, 54);
+    padding: 0 10px;
+    text-transform: uppercase;
+}
+.headingFor-about i{
+   color: rgb(112, 111, 111);
+   font-size: 10px;
+}
+.about-content{
+    width: 80%;
+    text-align: center;
+    margin: auto;
+    font-size: 1.2rem;
+    color: rgb(75, 75, 75);
+}
+.subHeadingForAbout{
+    font-size: 20px;
+    text-align: center;
+    margin: 10px;
+}
+.cards-containerForAbout{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin: 2rem auto;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 80%;
+}
+.cards-flex-about{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 260px;
+  height: 250px;
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+    border-bottom: 4px solid transparent;
+  padding: 1.3rem;
+   transition: 
+    /* border-bottom 0.3s ease-in-out,
+    box-shadow 0.3s ease-in-out, */
+    transform 0.3s ease-in-out;
+}
+.cards-flex-about:hover{
+ box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
+border-bottom-color: rgb(29, 29, 153);
+border-right: 1px solid transparent;
+border-width: 5px;
+ transform: translateY(-5px);
+ border-radius: 10px;
+}
+.aboutCard-title{
+    font-size: 1.3rem;
+    font-weight: 600;
+    text-align: center;
+}
+.aboutDescription{
+    width: 100%;
+    text-align: center;
+    white-space: normal;
+    overflow-wrap: break-word;
+    word-spacing: 6px;
+    color: rgb(75, 75, 75);
+}
+@media(max-width:1440px)  {
+    .textForImg{
+    font-size: 2rem;
+}
+}
+@media(max-width:768px){
+.textForImg{
+    font-size: 1rem;
+}
+}

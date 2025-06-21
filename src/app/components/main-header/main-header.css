@@ -11,7 +11,7 @@
     /* margin: 0; */
 }
 .header-logo{
-    width: 200px;
+    width: 220px;
     height: auto;
 }
 .header-logo img{
@@ -38,7 +38,7 @@
 .login-button {
   background: none;
   color: black;
-  padding: 10px 20px;
+  padding: 10px ;
   font-size: 18px;
   font-weight: 600;
   border: 2px solid transparent;
@@ -46,14 +46,18 @@
   transition: all 0.3s ease;
   border-image-slice: 1;
   border-width: 3px;
-  border-radius: 18px;
+  
 }
 
 .login-button:hover {
-  border-color: transparent; /* still transparent because border-image takes over */
-  border-image-source: linear-gradient(90deg, rgb(166, 75, 240), rgb(88, 113, 228), blue, violet);
-  color: red;
+ border-bottom-color:red;
+ color: red;
 }
+.login-button.active {
+ border-bottom-color:red;
+ color: red;
+}
+
 .hamburger {
   display: none;
   font-size: 28px;
@@ -68,15 +72,34 @@
     height: auto;
 }
 .login-button {
-  padding: 0px;
   font-size: 12px;
 }
 }
 @media(max-width:600px){
- .hamburger {
-    display: block;
+ .header-logins-flex {
+    display: none; /* hide menu by default */
+    flex-direction: column;
+    gap: 1rem;
+    background-color: white;
+    position: absolute;
+    top: 60px;  /* Adjust based on your header height */
+    right: 10px;
+    width: 150px;
+    border: 1px solid #ccc;
+    padding: 10px 15px;
+    z-index: 1000;
   }
-   .header-logins-flex.active {
-    display: flex;
+.login-button:hover {
+  border-color: transparent; /* still transparent because border-image takes over */
+  border-image-source: none;
+  color: red;
+}
+  .header-logins-flex.active {
+    display: flex; /* show menu when active */
+  }
+
+  .hamburger {
+    display: block;
+    cursor: pointer;
   }
 }

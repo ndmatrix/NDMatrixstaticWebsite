@@ -1,18 +1,17 @@
 <div class="header-mainpage-Container">
 <div class="header-logo">
-    <img  src="images/nDMartrixLogo.jpg" alt="logo"/>
+    <img  src="images/nDMartrixFinalLogo.jpg" alt="logo"/>
 </div>
-  <div class="hamburger" onclick="toggleMenu()">
+  <div class="hamburger" (click)="toggleMenu()">
     <i class="fa-solid fa-bars"></i>
   </div>
 <div class="header-logins-flex" id="navMenu" [ngClass]="{ 'active': isMenuOpen }">
-        <!-- <button  class="login-button" (click)="handleHomePage()">Home</button> -->
-        <button type="button" routerLink="/" class="login-button">Home</button>
-        <button  class="login-button" (click)="scrollToSection('productsPage')">About</button>
-        <button  class="login-button"(click)="scrollToSection('footerPage')" >ContactUs</button>
-        <!-- <button  class="login-button"  (click)="handleRegister()" >Register</button> -->
-        <button type="button" routerLink="/RegisterPage" class="login-button" >Register</button>
-        <button  class="login-button" routerLink="/loginPage">Login</button>
+        <button type="button" routerLink="/" class="login-button" [class.active]="activeButton === 'home'">Home</button>
+        <button  class="login-button" routerLink="/" (click)="scrollToSection('aboutPage','about')" [class.active]="activeButton === 'about' && currentRoute === '/'">About</button>
+        <button  class="login-button" routerLink="/" (click)="scrollToSection('verticals','verticals')" [class.active]="activeButton === 'verticals' && currentRoute === '/'">Verticals</button>
+        <button  class="login-button"routerLink="/ContactPage" [class.active]="activeButton === 'contact'">ContactUs</button>
+
+       
 </div>
 
 </div>
