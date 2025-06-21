@@ -32,7 +32,7 @@ display: flex;
     justify-content: center;
     align-items: center;
     position: relative;
-    top: 77px;
+    top: 55px;
 }
 .imageForCards{
     width: 170px;
@@ -71,7 +71,7 @@ border: 1px solid whitesmoke;
 }
 .cardsForFlex:hover {
   border-color: transparent;
-  border-image-source: linear-gradient(100deg, rgb(124, 103, 247), rgb(88, 113, 228), blue, violet);
+  border-image-source: linear-gradient(100deg, rgb(124, 103, 247), rgb(88, 113, 228), blue, rgb(130, 225, 238));
   transform: scale(1.02);
   box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
   background-color: rgb(240, 240, 248);

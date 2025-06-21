@@ -1,10 +1,10 @@
 <div id="verticals">
     
     <!-- <div id="productsPage"> -->
- <div class="mainProducts-container" >
-        <div class="headingFor-porducts"><i class="fa-solid fa-diamond"></i><i class="fa-solid fa-diamond"></i><i class="fa-solid fa-diamond"></i><h2>Verticals</h2><i class="fa-solid fa-diamond"></i><i class="fa-solid fa-diamond"></i><i class="fa-solid fa-diamond"></i></div>
+ <div class="mainVerticals-container" >
+        <div class="headingFor-verticals"><i class="fa-solid fa-diamond"></i><i class="fa-solid fa-diamond"></i><i class="fa-solid fa-diamond"></i><h2>Verticals</h2><i class="fa-solid fa-diamond"></i><i class="fa-solid fa-diamond"></i><i class="fa-solid fa-diamond"></i></div>
   
-<div class="products-cards-Container">
+<div class="verticals-cards-Container">
    
  
     <div class="vertical-card" *ngFor="let verticalCard of verticals"
@@ -14,17 +14,17 @@
      (click)="onCardClick(verticalCard, $event)"
       (mouseenter)="onMouseEnter(verticalCard)"
      (mouseleave)="onMouseLeave()">
-         <div class="productsImgTitleInfo">
+         <div class="verticalsImgTitleInfo">
         <div class="imageForCards">
             <img [src]="verticalCard.verticalImg" alt="cardImg1"/>
             
         </div>
-         <div class="productsName">{{verticalCard.title}}</div>
+         <div class="verticalsName">{{verticalCard.title}}</div>
         </div>
           
-        <div class="productsInfo">
-       <div class="productsName">{{verticalCard.title}}</div>
-        <div class="productsDiscription">{{verticalCard.description}} </div>
+        <div class="verticalsInfo">
+       <div class="verticalsName">{{verticalCard.title}}</div>
+        <div class="verticalsDiscription">{{verticalCard.description}} </div>
          <div class="arrow" *ngIf="verticalCard.route && (hoverCard === verticalCard || isActive(verticalCard))" >
     <i class="fa-solid fa-arrow-right"></i>
   </div>
