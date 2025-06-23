@@ -7,8 +7,13 @@
 justify-content: center;
 flex-wrap: wrap;
 gap: 1rem;
-padding: 1rem;
+/* padding: 1rem; */
 }
+.footer-ContainerpageFlex > div {
+  flex: 1 1 200px;
+  margin-top: 1rem;
+}
+
 .iconsForNdmatrixHead{
 display: flex;
     flex-direction: column;
@@ -18,11 +23,11 @@ display: flex;
 }
 .Footer-icons{
     display: flex;
-    gap: 1rem;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
 }
-.Footer-TermsPolicy{
-    margin: -10px;
-}
+
 .Footer-TermsPolicy li{
     list-style-type: none;
     padding-top: 10px;
@@ -31,7 +36,7 @@ display: flex;
 .Footer-TermsPolicy li a:hover{
     color:  rgb(233, 208, 139);
 }
-.FooteraboutUs{
+/* .FooteraboutUs{
     width: 20%;
     padding-top: 1rem;
     display: flex;
@@ -41,18 +46,11 @@ display: flex;
 .FooteraboutUs p{
     margin: 0;
     padding: 0;
-}
+} */
 .headingForfooter{
     font-weight: 600;
       padding: 5px;
       font-size: 1.2rem;
-}
-.exploreLinksForFooter{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin-top: -10px;
 }
 a{
   color: white;
@@ -96,6 +94,7 @@ a{
     justify-content: center;
     align-items: center;
 }
+
 .iconBtn {
   background-color:#131341;;
   border: 1px solid whitesmoke;
@@ -105,6 +104,8 @@ a{
   border-radius: 5px;
   /* border-radius: 50%; Ensures it's a circle */
   transition: background-color 0.3s ease, transform 0.3s ease;
+  width: 50px;
+  margin:  5px;
 }
 
 .iconBtn i {
@@ -127,8 +128,34 @@ a{
 }
 
 }
-@media(max-width:600px){
+@media(max-width:1100px){
+    .footer-ContainerpageFlex > div{
+        flex: 1 1 150px;
+    }
     .FooteraboutUs{
         width: 40%;
+    }
+.FooteraboutUs p{
+    font-size: 13px;
+}
+.exploreLinksForFooter li {
+    font-size: 13px;
+}
+.Footer-AddressInfo li{
+    font-size: 13px;
+
+}
+.Footer-TermsPolicy li{
+    font-size: 13px;
+
+}
+.FooterCopyRights{
+    font-size: 13px;
+
+}
+}
+@media(max-width:768px){
+ .footer-ContainerpageFlex > div{
+        flex: 1  250px;
     }
 }

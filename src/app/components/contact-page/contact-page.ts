@@ -4,9 +4,10 @@ import { MainFooter } from '../main-footer/main-footer';
 
 @Component({
   selector: 'contact-page',
+  standalone:true,
   imports: [MainHeader,MainFooter],
   templateUrl: './contact-page.html',
-  styleUrl: './contact-page.css'
+  styleUrls: ['./contact-page.css']
 })
 export class ContactPage {
 

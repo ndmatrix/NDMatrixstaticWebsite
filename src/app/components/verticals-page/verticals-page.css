@@ -185,4 +185,7 @@ top: 50px;
 gap: 1rem;
 margin: 1rem;
 }
+.verticalsDiscription{
+  font-size: 13px;
+}
 }

@@ -131,7 +131,11 @@ border: 1px solid whitesmoke;
 @media(max-width:780px){
    .products-cards-Container{
 gap: 1rem;
+/* width: -1%; */
 }
+ .products-cards-Container >div{
+flex: 1 1 100px;
+ }
 }
 @media(max-width:900px){
    .MainProctsHomePage-Container{

@@ -9,7 +9,7 @@
     align-items: center;
     justify-content: center;
   background-color: whitesmoke;
-padding: 7.2rem;
+padding: 3rem;
 }
 .headingForContactUs{
     color: rgb(76, 76, 151);
@@ -77,10 +77,5 @@ padding: 7.2rem;
     width: 250px;
     height: 100px;
 }
-}
-@media(max-width:1440px){
-    .contactPage-SubContainer{
-        padding: 3rem;
-    }
 }
 
