@@ -1,4 +1,4 @@
-<div class="header-mainpage-Container">
+<div class="header-mainpage-Container" id="Home">
 <div class="header-logo">
     <img  src="images/nDMartrixFinalLogo.jpg" alt="logo"/>
 </div>
@@ -6,7 +6,7 @@
     <i class="fa-solid fa-bars"></i>
   </div>
 <div class="header-logins-flex" id="navMenu" [ngClass]="{ 'active': isMenuOpen }">
-        <button type="button" routerLink="/" class="login-button" [class.active]="activeButton === 'home'">Home</button>
+        <button type="button" routerLink="/" (click)="scrollToSection('Home','home')" class="login-button" [class.active]="activeButton === 'home'">Home</button>
         <button  class="login-button" routerLink="/" (click)="scrollToSection('aboutPage','about')" [class.active]="activeButton === 'about' && currentRoute === '/'">About</button>
         <button  class="login-button" routerLink="/" (click)="scrollToSection('verticals','verticals')" [class.active]="activeButton === 'verticals' && currentRoute === '/'">Verticals</button>
         <button  class="login-button"routerLink="/ContactPage" [class.active]="activeButton === 'contact'">ContactUs</button>

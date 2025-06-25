@@ -27,7 +27,7 @@
 
 .arrow {
   position: absolute;
-  bottom: -45%;
+  bottom: -25%;
   left: 50%;
   transform: translateX(-50%);
   font-size: 22px;
@@ -58,7 +58,7 @@ display: flex;
 }
 .imageForCards{
     width: 170px;
-    height: auto;
+    height: 150px;
      
 }
 .imageForCards img{
@@ -149,7 +149,7 @@ top: 50px;
   text-align: center;
 }
 .verticalsName{
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 500;
     text-transform: capitalize;
     text-align: center;
@@ -177,8 +177,8 @@ top: 50px;
    padding: 0 1rem;
   white-space: normal;       
   overflow-wrap: break-word; 
-  word-spacing: 3px;
       color: rgb(112, 111, 111);
+      font-size: 1rem;
 }
 @media(max-width:780px){
    .verticals-cards-Container{
