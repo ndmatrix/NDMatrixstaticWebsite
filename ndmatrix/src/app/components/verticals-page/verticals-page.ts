@@ -15,7 +15,6 @@ export class VerticalsPage {
   }
    hoverCard: any = null;
 currentRoute: string = '';
-
   verticals=[
     {
       title:"Aerospace/Mechanical",
