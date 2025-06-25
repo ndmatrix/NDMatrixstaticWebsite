@@ -25,11 +25,11 @@ jobs:
 
       - name: Install dependencies
         run: |
-          cd ndmatrix
+          # cd ndmatrix
           npm ci
       - name: Build Angular app
         run: |
-          cd ndmatrix
+          # cd ndmatrix
           npm run build
       - name: Deploy to Azure Static Web Apps
         id: builddeploy
@@ -37,7 +37,7 @@ jobs:
         with:
           azure_static_web_apps_api_token: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN_HAPPY_FIELD_09E9FCC00 }}
           action: "upload"
-          app_location: "ndmatrix/dist/nDmatrix-Page/browser"  # ✅ built folder with index.html
+          app_location: "dist/nDmatrix-Page/browser"  # ✅ built folder with index.html
           api_location: ""
           output_location: ""  # Not needed when `app_location` points to final output
           skip_app_build: true  # ✅ we've already built it manually
