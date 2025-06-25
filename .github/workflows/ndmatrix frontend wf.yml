@@ -25,7 +25,7 @@ jobs:
 
       - name: Install dependencies
         run: |
-          # cd ndmatrix
+          cd ndmatrix
           npm ci
       - name: Build Angular app
         run: |
