@@ -81,12 +81,12 @@ border: 1px solid whitesmoke;
 
 .cardsForFlex:hover .productsInfo {
   opacity: 1;
-  transform: translateY(-100%);
+  transform: translateY(-90%);
   display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 1rem;
+    gap: 7px;
 }
 .productsInfo {
   opacity: 0;
@@ -133,9 +133,7 @@ border: 1px solid whitesmoke;
 gap: 1rem;
 /* width: -1%; */
 }
- .products-cards-Container >div{
-flex: 1 1 100px;
- }
+
 }
 @media(max-width:900px){
    .MainProctsHomePage-Container{
