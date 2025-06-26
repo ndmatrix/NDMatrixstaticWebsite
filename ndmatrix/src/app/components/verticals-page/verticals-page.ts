@@ -52,7 +52,7 @@ onMouseLeave() {
   }
 onCardClick(card: any, event: MouseEvent) {
     if (card.route) {
-      event.preventDefault(); // prevent default if routerLink also used
+      event.preventDefault(); 
       this.router.navigate([card.route]);
     }
   }

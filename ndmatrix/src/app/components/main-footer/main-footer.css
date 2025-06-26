@@ -31,7 +31,7 @@ display: flex;
 
 .Footer-TermsPolicy li{
     list-style-type: none;
-    padding-top: 10px;
+    padding-top: 7px;
     cursor: pointer;
 }
 .Footer-TermsPolicy li a:hover{
@@ -60,7 +60,7 @@ a{
 .exploreLinksForFooter li {
     list-style-type: none;
     cursor: pointer;
-    margin-top: 10px;
+    margin-top: 7px;
     text-transform: capitalize;
 }
 .exploreLinksForFooter li a:hover{
