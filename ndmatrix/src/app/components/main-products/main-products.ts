@@ -58,7 +58,7 @@ productCards=[
   productImg:"images/bundleproject.jpg"
 },
 {
- title:"cloud services & infrastracture",
+ title:"cloud services & infrastructure",
  discription:`Tools for deploying, scaling, and maintaining cloud apps with containers, CI/CD, and monitoring.`,
   productImg:"images/clouldservices.jpg"
 }
