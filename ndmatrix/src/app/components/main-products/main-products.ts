@@ -53,7 +53,7 @@ productCards=[
   productImg:"images/adminPortal.jpg"
 },
 {
- title:"bundle project",
+ title:"Online Courses",
   discription:`A unified platform combining OTS, ORVL, PQB, SM, LMS, and SMS for seamless use by institutes and learners`,
   productImg:"images/bundleproject.jpg"
 },

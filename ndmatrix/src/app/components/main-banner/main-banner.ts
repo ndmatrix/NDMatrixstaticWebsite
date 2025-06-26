@@ -11,7 +11,7 @@ export class MainBanner {
 aboutCards=[
   {
     title:" Professional & Visionary",
-    description:`We deliver next-generation products and services across multiple dimensions, leveraging advanced technologies and AI integration. Our strength lies in a culture that fosters innovation, collaboration, and strategic thinking ,enabling us to build smart solutions for a rapidly evolving world.`
+    description:`We deliver next-generation products and services across multiple dimensions, leveraging advanced technologies and AI integration. Our strength lies in a culture enabling us to build smart solutions for a rapidly evolving world.`
   },
   {
     title:"Tech-Focused",
@@ -19,7 +19,7 @@ aboutCards=[
   },
   {
     title:" Creative & Forward Thinking",
-    description:`At NDMatrix, we don't just build products, we create experiences powered by AI and advanced tech. Across various industries and dimensions, we combine creative thinking, intelligent design, and a progressive culture to lead the way into the future.`
+    description:`At NDMatrix, we don't just build products, we create experiences powered by AI and advanced tech. Across various industries and dimensions, we combine creative thinking, and intelligent design  into the future.`
   }
 ]
 

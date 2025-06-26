@@ -35,25 +35,34 @@ export class MainHeader {
       }
     });
   }
-  scrollToSection(sectionId: string, button: 'about' | 'verticals') {
-    if (this.currentRoute === '/') {
+  scrollToSection(sectionId: string, button: 'home' | 'about' | 'verticals') {
+  if (this.currentRoute === '/') {
+    if (button === 'home') {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    } else {
       const element = document.getElementById(sectionId);
       if (element) {
         element.scrollIntoView({ behavior: 'smooth' });
-        this.activeButton = button;
       }
-    } else {
-      this.router.navigate(['/']).then(() => {
-        setTimeout(() => {
+    }
+    this.activeButton = button;
+  } else {
+    this.router.navigate(['/']).then(() => {
+      setTimeout(() => {
+        if (button === 'home') {
+          window.scrollTo({ top: 0, behavior: 'smooth' });
+        } else {
           const element = document.getElementById(sectionId);
           if (element) {
             element.scrollIntoView({ behavior: 'smooth' });
-            this.activeButton = button;
           }
-        }, 100);
-      });
-    }
+        }
+        this.activeButton = button;
+      }, 100);
+    });
   }
+}
+
 
  toggleMenu(): void {
   this.isMenuOpen = !this.isMenuOpen;
