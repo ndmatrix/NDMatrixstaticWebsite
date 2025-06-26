@@ -1,5 +1,5 @@
-import { CommonModule } from '@angular/common';
-import { Component, ViewChild } from '@angular/core';
+import { CommonModule, isPlatformBrowser } from '@angular/common';
+import { AfterViewInit, Component, ElementRef, Inject, PLATFORM_ID, ViewChild } from '@angular/core';
 import { MainHeader } from '../main-header/main-header';
 import { MainFooter } from '../main-footer/main-footer';
 
@@ -9,7 +9,28 @@ import { MainFooter } from '../main-footer/main-footer';
   templateUrl: './main-products.html',
   styleUrl: './main-products.css'
 })
-export class MainProducts {
+export class MainProducts implements AfterViewInit{
+
+    constructor(@Inject(PLATFORM_ID) private platformId: Object) {}
+  @ViewChild('productsContainer', { static: false }) productsContainer!: ElementRef;
+
+  ngAfterViewInit() {
+        if (isPlatformBrowser(this.platformId)) {
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('products-visible');
+        } else {
+          entry.target.classList.remove('products-visible');
+        }
+      });
+    }, { threshold: 0.1 });
+
+    if (this.productsContainer?.nativeElement) {
+      observer.observe(this.productsContainer.nativeElement);
+    }
+  }
+}
 
 productCards=[
   {

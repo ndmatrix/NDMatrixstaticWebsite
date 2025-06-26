@@ -3,11 +3,11 @@
     <main-header></main-header>
  <div class="mainProducts-container" >
         <div class="headingFor-porducts"><i class="fa-solid fa-diamond"></i><i class="fa-solid fa-diamond"></i><i class="fa-solid fa-diamond"></i><h2>Our Products</h2><i class="fa-solid fa-diamond"></i><i class="fa-solid fa-diamond"></i><i class="fa-solid fa-diamond"></i></div>
+ <div  #productsContainer class="products-enter">
   
 <div class="products-cards-Container">
    
- 
-    <div class="cardsForFlex" *ngFor="let cards of productCards">
+    <div  class="cardsForFlex" *ngFor="let cards of productCards">
          <div class="productsImgTitleInfo">
         <div class="imageForCards">
             <img [src]="cards.productImg" alt="cardImg1"/>
@@ -20,6 +20,7 @@
        <div class="productsName">{{cards.title}}</div>
         <div class="productsDiscription">{{cards.discription}} </div>
 </div>
+  </div>
   </div>
   </div>
   <main-footer></main-footer>

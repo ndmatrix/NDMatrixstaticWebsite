@@ -24,8 +24,19 @@ flex-wrap: wrap;
 width: 80%;
 
 }
+.products-enter {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.products-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 .productsImgTitleInfo{
-transition: opacity 0.4s ease;
+transition: opacity 0.1s ease;
 display: flex;
     flex-direction: column;
     gap: 1rem;
@@ -47,7 +58,7 @@ display: flex;
 
         background-color: white;
          object-fit: cover;
-           transition: transform 0.3s ease, opacity 0.4s ease;
+           transition: transform  0.1s ease, opacity  0.1s ease;
 }
 .cardsForFlex{
 /* box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; */
@@ -90,8 +101,8 @@ border: 1px solid whitesmoke;
 }
 .productsInfo {
   opacity: 0;
-  transform: translateY(-50%);
-  transition: opacity 0.4s ease, transform 0.3s ease;
+  transform: translateY(-85%);
+  transition: opacity  0.1s ease, transform  0.1s ease;
   text-align: center;
 
 }
@@ -122,7 +133,7 @@ border: 1px solid whitesmoke;
 }
 .productsDiscription{
    width: 100%; 
-   padding: 0 1rem;
+   /* padding: 0 1rem; */
   white-space: normal;       
   overflow-wrap: break-word; 
   word-spacing: 3px;

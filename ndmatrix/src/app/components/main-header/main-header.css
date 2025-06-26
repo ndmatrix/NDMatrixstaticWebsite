@@ -65,9 +65,9 @@
   cursor: pointer;
 }
 @media(max-width:780px){
-    .header-mainpage-Container{
+    /* .header-mainpage-Container{
         box-shadow: none;
-    }
+    } */
     .header-logo{
     width: 150px;
     height: auto;
