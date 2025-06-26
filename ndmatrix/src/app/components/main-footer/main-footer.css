@@ -123,6 +123,9 @@ a{
 .iconBtn:hover i {
   color: #000; /* Icon color on hover */
 }
+.FooterCopyRights{
+text-align: center;
+}
 @media(min-width:1440px){
 .footer-ContainerpageFlex{
     justify-content: space-around
