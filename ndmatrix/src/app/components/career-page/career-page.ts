@@ -16,7 +16,7 @@ jobsInfo=[
     noOfOpenings:'3',
   },
   {
-    jobtitle:"cloud supporting engineer",
+    jobtitle:"cloud support engineer",
     noOfOpenings:'2',
   }
 ]
