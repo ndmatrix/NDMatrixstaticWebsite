@@ -1,0 +1,212 @@
+/* .bannerForCareerPage{
+    width: 100%;
+
+}
+.bannerForCareerPage img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+} */
+ .careerPage-container{
+    margin: 3rem 0;
+ }
+ .careersHeroHead{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+margin-top: 3rem;    
+ }
+ .career-content-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    /* width: 80%; */
+ }
+ .career-text p{
+    width: 30%;
+    text-align: center;
+   margin: 0 auto;
+ }
+ .career-image{
+    width: 700px;
+    /* height: 350px; */
+ }
+ .career-image img{
+    width: 100%;
+    height: auto;
+ }
+ hr{
+    width: 8%;
+    color: #414040;
+   
+ }
+ .headeingForCareer{
+    text-align: center;
+    color: #444491;
+ }
+
+ .findBtn button{
+    padding: 10px 15px;
+  align-items: center;
+  appearance: none;
+  background-image: radial-gradient(100% 100% at 100% 0, #5adaff 0, #5468ff 100%);
+  border: 0;
+  border-radius: 6px;
+  box-shadow: rgba(45, 35, 66, .4) 0 2px 4px,rgba(45, 35, 66, .3) 0 7px 13px -3px,rgba(58, 65, 111, .5) 0 -3px 0 inset;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: "JetBrains Mono",monospace;
+  /* height: 48px; */
+  justify-content: center;
+  line-height: 1;
+  list-style: none;
+  overflow: hidden;
+  position: relative;
+  text-align: left;
+  text-decoration: none;
+  transition: box-shadow .15s,transform .15s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  will-change: box-shadow,transform;
+  font-size: 20px;
+}
+
+.findBtn button:focus {
+  box-shadow: #3c4fe0 0 0 0 1.5px inset, rgba(45, 35, 66, .4) 0 2px 4px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
+}
+
+.findBtn button:hover {
+  box-shadow: rgba(45, 35, 66, .4) 0 4px 8px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
+  transform: translateY(-2px);
+}
+
+.findBtn button:active {
+  box-shadow: #3c4fe0 0 3px 7px inset;
+  transform: translateY(2px);
+}
+.flexofSearch{
+    /* width: 70%; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.search-box {
+  position: relative;
+  width: 50%;
+}
+
+.search-box input {
+  width: 90%;
+  padding: 15px 40px ;
+  border: 1px solid whitesmoke;
+  border-radius: 10px;
+  font-size: 14px;
+  box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+}
+.search-box i {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #888;
+  pointer-events: none;
+}
+.jobs-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 3rem 0;
+}
+.jobsFlex-cards{
+    border: 1px solid whitesmoke;
+    width: 80%;
+    margin: 1rem 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem;
+    border-radius: 10px;
+}
+.jobsFlex-cards:hover{
+box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+border-color: rgb(130, 130, 245);
+}
+.applyBtn{
+    text-align: right;
+}
+.applyBtn button{
+    color: white;
+    background-color: rgb(105, 36, 151);
+    padding: 10px 15px ;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border: none;
+}
+.job-titile h3{
+    text-transform: capitalize;
+    color: rgb(51, 13, 13);
+}
+.animate-left {
+  animation: slideInLeft 1s ease-out forwards;
+  animation-delay: 0.2s;
+}
+
+.animate-right {
+  animation: slideInRight 1s ease-out forwards;
+  animation-delay: 0.4s;
+}
+@keyframes slideInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-150px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(150px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@media(max-width:1500px){
+    .search-box input {
+  width: 80%;
+    }
+}
+@media(max-width:900px){
+    .search-box input {
+  width: 70%;
+    }
+}
+@media(max-width:600px){
+    .search-box input {
+  width: 60%;
+    }
+}
+@media(max-width:400px){
+    .search-box input {
+  width: 40%;
+    }
+}
+@media(max-width:768px){
+    .careersHeroHead p{
+    font-size: 1rem;
+ }
+}

@@ -1,5 +1,5 @@
-import { CommonModule, NgClass } from '@angular/common';
-import { Component } from '@angular/core';
+import { CommonModule, isPlatformBrowser, NgClass } from '@angular/common';
+import { Component, Inject, PLATFORM_ID } from '@angular/core';
 import { NavigationEnd, Router, RouterLink, ActivatedRoute } from '@angular/router';
 
 @Component({
@@ -12,42 +12,46 @@ import { NavigationEnd, Router, RouterLink, ActivatedRoute } from '@angular/rout
 export class MainHeader {
   isMenuOpen = false;
   currentRoute: string = '';
-  activeButton: 'home' | 'about' | 'verticals' | 'contact' | '' = '';
+  activeButton: 'home' | 'about' | 'verticals' | 'contact' |'careers' | '' = '';
 
- constructor(private router: Router) {
-  this.router.events.subscribe(event => {
-    if (event instanceof NavigationEnd) {
-      this.currentRoute = event.urlAfterRedirects;
+  constructor(private router: Router, @Inject(PLATFORM_ID) private platformId: Object) {
+    this.router.events.subscribe(event => {
+      if (event instanceof NavigationEnd) {
+        this.currentRoute = event.urlAfterRedirects;
 
-      const url = new URL(window.location.href);
-      const active = url.searchParams.get('active');
-      const section = url.searchParams.get('section');
+        if (isPlatformBrowser(this.platformId)) {
+          const url = new URL(window.location.href);
+          const active = url.searchParams.get('active');
+          const section = url.searchParams.get('section');
 
-      if (active) {
-        this.activeButton = active as 'home' | 'about' | 'verticals';
-      }
+          if (active) {
+            this.activeButton = active as 'home' | 'about' | 'verticals';
+          }
 
-      if (section) {
-        setTimeout(() => {
-          this.scrollToElement(section, active || '');
-        }, 200);
-      } else {
-        // fallback default behavior
-        switch (this.currentRoute) {
-          case '/':
-          case '/home':
-            this.activeButton = 'home';
-            break;
-          case '/ContactPage':
-            this.activeButton = 'contact';
-            break;
-          default:
-            this.activeButton = '';
+          if (section) {
+            setTimeout(() => {
+              this.scrollToElement(section, active || '');
+            }, 200);
+          } else {
+            switch (this.currentRoute) {
+              case '/':
+              case '/home':
+                this.activeButton = 'home';
+                break;
+              case '/ContactPage':
+                this.activeButton = 'contact';
+                break;
+                  case '/CareersPage':
+                this.activeButton = 'careers';
+                break;
+              default:
+                this.activeButton = '';
+            }
+          }
         }
       }
-    }
-  });
-}
+    });
+  }
 
 
   scrollToSection(sectionId: string, button: 'home' | 'about' | 'verticals') {
@@ -62,6 +66,7 @@ export class MainHeader {
   }
 
   private scrollToElement(sectionId: string, button: string) {
+  if (isPlatformBrowser(this.platformId)) {
     if (button === 'home') {
       window.scrollTo({ top: 0, behavior: 'smooth' });
     } else {
@@ -71,6 +76,8 @@ export class MainHeader {
       }
     }
   }
+}
+
 
   toggleMenu(): void {
     this.isMenuOpen = !this.isMenuOpen;

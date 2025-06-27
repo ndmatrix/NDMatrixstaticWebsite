@@ -18,7 +18,7 @@ currentRoute: string = '';
   verticals=[
     {
       title:"Aerospace/Mechanical",
-      description:`NDMatrix provides advanced tools and learning resources for  students, educators, and professionals aiming for industry readiness.`,
+      description:`nDMatrix provides advanced tools and learning resources for  students, educators, and professionals aiming for industry readiness.`,
       verticalImg:"images/aerospace.jpg",
     },
     {

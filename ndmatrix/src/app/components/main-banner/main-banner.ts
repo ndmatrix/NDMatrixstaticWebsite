@@ -15,11 +15,11 @@ aboutCards=[
   },
   {
     title:"Tech-Focused",
-    description:`With a deep focus on innovation, NDMatrix offers AI-driven and tech-enabled products across multiple domains. Our team blends cutting-edge technology with strong vision and agile culture to deliver impactful, scalable solutions.`
+    description:`With a deep focus on innovation, nDMatrix offers AI-driven and tech-enabled products across multiple domains. Our team blends cutting-edge technology with strong vision and agile culture to deliver impactful, scalable solutions.`
   },
   {
     title:" Creative & Forward Thinking",
-    description:`At NDMatrix, we don't just build products, we create experiences powered by AI and advanced tech. Across various industries and dimensions, we combine creative thinking, and intelligent design  into the future.`
+    description:`At nDMatrix, we don't just build products, we create experiences powered by AI and advanced tech. Across various industries and dimensions, we combine creative thinking, and intelligent design  into the future.`
   }
 ]
 
