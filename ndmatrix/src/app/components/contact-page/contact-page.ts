@@ -14,29 +14,29 @@ const isBrowser = typeof window !== 'undefined';
   styleUrls: ['./contact-page.css']
 })
 export class ContactPage {
-  @ViewChild('contactFormRef') contactFormRef!: ElementRef<HTMLFormElement>;
+  // @ViewChild('contactFormRef') contactFormRef!: ElementRef<HTMLFormElement>;
 
-  sendEmail() {
-    console.log("sendEmail() triggered");
+  // sendEmail() {
+  //   console.log("sendEmail() triggered");
 
-    emailjs.sendForm(
-      'service_2ap83yn',
-      'template_1ffd92k',
-      this.contactFormRef.nativeElement,
-      'FTTyjdyRLojv6u0PZ'
-    ).then(() => {
-      alert('Message sent successfully!');
-      this.contactFormRef.nativeElement.reset();
+  //   emailjs.sendForm(
+  //     'service_2ap83yn',
+  //     'template_1ffd92k',
+  //     this.contactFormRef.nativeElement,
+  //     'FTTyjdyRLojv6u0PZ'
+  //   ).then(() => {
+  //     alert('Message sent successfully!');
+  //     this.contactFormRef.nativeElement.reset();
 
-      // Optional: Clear scroll target after submitting form
-      // if (isBrowser) {
-      //   window.sessionStorage.removeItem('scrollTarget');
-      //   window.sessionStorage.removeItem('activeButton');
-      // }
+  //     // Optional: Clear scroll target after submitting form
+  //     // if (isBrowser) {
+  //     //   window.sessionStorage.removeItem('scrollTarget');
+  //     //   window.sessionStorage.removeItem('activeButton');
+  //     // }
 
-    }).catch((error) => {
-      console.error("EmailJS Error:", error);
-      alert('Failed to send message. Please check form fields.');
-    });
-  }
+  //   }).catch((error) => {
+  //     console.error("EmailJS Error:", error);
+  //     alert('Failed to send message. Please check form fields.');
+  //   });
+  // }
 }

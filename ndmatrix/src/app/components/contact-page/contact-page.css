@@ -1,8 +1,4 @@
-.contactPage-Container{
-    width: 80%;
-    margin: 0 auto;
-    box-shadow: 0px 0px 3px 3px rgb(187, 187, 187);
-}
+
 .contactPage-SubContainer{
     display: flex;
     flex-direction: column;
@@ -64,12 +60,7 @@ padding: 3rem;
   transform: translateY(-2px);       
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
-@media(max-width:900px){
-   .contactPage-Container{
-    width: 100%;
-    box-shadow:none;
-}
-}
+
 @media(max-width:600px){
    .contact-detailsInfo input{
     width: 250px;

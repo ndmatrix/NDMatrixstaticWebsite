@@ -14,10 +14,10 @@
         <div class="imageForCards">
             <img [src]="verticalCard.verticalImg" alt="cardImg1"/>
         </div>
-         <div class="verticalsName">{{verticalCard.title}}</div>
+         <div class="verticalsName"><h3>{{verticalCard.title}}</h3></div>
         </div>
         <div class="verticalsInfo">
-       <div class="verticalsName">{{verticalCard.title}}</div>
+       <div class="verticalsName"><h3>{{verticalCard.title}}</h3></div>
         <div class="verticalsDiscription">{{verticalCard.description}} </div>
          <div class="arrow" *ngIf="verticalCard.route && (hoverCard === verticalCard || isActive(verticalCard))" >
     <i class="fa-solid fa-arrow-right"></i>

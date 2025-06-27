@@ -6,22 +6,17 @@
  <div  #productsContainer class="products-enter">
   
 <div class="products-cards-Container">
-   
-    <div  class="cardsForFlex" *ngFor="let cards of productCards">
-         <div class="productsImgTitleInfo">
-        <div class="imageForCards">
-            <img [src]="cards.productImg" alt="cardImg1"/>
-            
-        </div>
-         <div class="productsName">{{cards.title}}</div>
-        </div>
-          
-        <div class="productsInfo">
-       <div class="productsName">{{cards.title}}</div>
-        <div class="productsDiscription">{{cards.discription}} </div>
+  <div class="cardsForFlex" *ngFor="let cards of productCards">
+    <div class="productsImgTitleInfo">
+      <div class="iconForCards">
+        <i [class]="cards.productsIcon"></i>
+      </div>
+      <h3 class="productsName">{{ cards.title }}</h3>
+       <div class="productsDiscription">{{ cards.discription }}</div>
+    </div>
+  </div>
 </div>
-  </div>
-  </div>
+
   </div>
   <main-footer></main-footer>
      </div>

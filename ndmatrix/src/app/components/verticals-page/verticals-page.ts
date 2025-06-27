@@ -18,12 +18,12 @@ currentRoute: string = '';
   verticals=[
     {
       title:"Aerospace/Mechanical",
-      description:`NDMatrix provides advanced tools and learning resources for Aerospace and Mechanical Engineering,Ideal for students, educators, and professionals aiming for industry readiness.`,
+      description:`NDMatrix provides advanced tools and learning resources for  students, educators, and professionals aiming for industry readiness.`,
       verticalImg:"images/aerospace.jpg",
     },
     {
     title:"Robotics/Mechatronics",
-    description:`We offers hands-on learning tools and real-world project support in Robotics and Mechatronics,We empower students to design, simulate, and control intelligent systems with industry-relevant skills.`,
+    description:`We offers hands-on learning tools and real-world project support in Robotics and Mechatronics,We empower students to design, simulate skills.`,
  verticalImg:"images/robotic.jpg",
     },
      {
@@ -33,7 +33,7 @@ currentRoute: string = '';
     },
      {
     title:"Software Development Center",
-    description:` We supports students and educators in building real-world applications,From coding fundamentals to full-stack development, we offer guided, project-based learning experiences.`,
+    description:` We supports students and educators in building real-world applications we offer guided, project-based learning experiences.`,
  verticalImg:"images/softwareDev.jpg",
  route:"/software-development-center/productsPage"
     }
