@@ -5,74 +5,125 @@
     align-items: center;
     justify-content: center;
   background-color: whitesmoke;
-padding: 3rem;
+padding-bottom: 3rem;
 }
 .headingForContactUs{
-    color: rgb(76, 76, 151);
-    /* text-decoration: underline; */
-     margin: 2rem 0;
+     color: white;
+     text-align: center;
+       display: none;
+    font-size: 3rem;
 }
 .contact-detailsInfo{
     display: flex;
     flex-direction: column;
     gap: 1rem;
-    /* align-items: center; */
+ align-items: center; 
     justify-content: center;
    
 }
-.contact-detailsInfo input{
-    width: 476px;
-    height: 38px;
-    border-radius: 5px;
-    font-size: 18px;
-    padding:  5px 10px;
-    border: none;
-    box-shadow: rgba(14, 63, 126, 0.04) 0px 0px 0px 1px, rgba(42, 51, 69, 0.04) 0px 1px 1px -0.5px, rgba(42, 51, 70, 0.04) 0px 3px 3px -1.5px, rgba(42, 51, 70, 0.04) 0px 6px 6px -3px, rgba(14, 63, 126, 0.04) 0px 12px 12px -6px, rgba(14, 63, 126, 0.04) 0px 24px 24px -12px;
+.contactImg-wrapper{
+  width: 100%;
+    position: relative;
+  background-color: rgba(14, 32, 90, 0.6);
 }
-.contact-detailsInfo textarea{
-    width: 476px;
-    height: 200px;
-    border-radius: 5px;
-    font-size: 20px;
-    border: none;
-      padding:  5px 10px;
-      box-shadow: rgba(14, 63, 126, 0.04) 0px 0px 0px 1px, rgba(42, 51, 69, 0.04) 0px 1px 1px -0.5px, rgba(42, 51, 70, 0.04) 0px 3px 3px -1.5px, rgba(42, 51, 70, 0.04) 0px 6px 6px -3px, rgba(14, 63, 126, 0.04) 0px 12px 12px -6px, rgba(14, 63, 126, 0.04) 0px 24px 24px -12px;
-}
-.submitBtn{
-    text-align: right;
-}
-.submitBtn button{
-    padding: 12px 30px;
-    border-radius: 7px;
-  background-color: none ;
-  font-size: 1.2rem;
-   background-color:rgb(71, 165, 241); 
-    color: white;
-    transform: scale(1.0);
-    border: none;
-    font-weight: 600;
-    cursor: pointer;
-  transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
-}
-.submitBtn button:hover{
-   transition:transform 0.3s ease;
-   background-color: rgb(28, 148, 247);       
-  transform: translateY(-2px);       
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+.contactImg-wrapper img{
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+ -webkit-mask-image:linear-gradient(rgba(165, 199, 238, 0.5));
 }
 .listForAddress{
-  border: 1px solid whitesmoke;
-  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
-  padding: 1rem;
   display: flex;
   justify-content: center;
-}
-.listForAddress li{
-  list-style-type: none;
-  padding: 10px;
-  font-size: 18px;
+  align-items: center;
+  gap: 3rem;
+  margin-top: -70px;
+  z-index: 1;
   font-weight: 600;
+  font-size: 1.5rem;
 }
+.EmailInfo ,.addressInfo{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+  border: 1px solid rgb(211, 211, 211);
+  padding: 1rem;
+margin: 1rem;
+width: 500px;
+height: 350px;
+background-color: white;
+}
+.IconforContact i{
+  font-size: 50px;
+  color: #2e2d86;;
+}
+ .headingForfooter {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-150%, -30%);
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  border-radius: 10px;
+}
+.headingForfooter h1{
+  font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+.headingForfooter p{
+ font-size: 1rem;
+  max-width: 600px;
+  margin: 0 auto;
+}
+@media(max-width:1500px){
+    .headingForfooter{
+  transform: translate(-100%, -30%);
+  
+   } 
+   .EmailInfo ,.addressInfo{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+  border: 1px solid rgb(211, 211, 211);
+  padding: 1rem;
+margin: 1rem;
+width: 300px;
+height: 250px;
+background-color: white;
+}
+   .listForAddress{
+  font-size: 1rem;
+}
+}
+@media(max-width:900px){
+.listForAddress{
+  gap: 1rem;
+ margin: 0;
+}
+}
+@media(max-width:768px){
+   .headingForfooter{
+  transform: translate(-100%, -40%);
+    
+   } 
+     .headingForfooter h1{
+  font-size: 15px;
+}
+.headingForfooter p{
+  text-align: center;
+  font-size: 10px;
+
+}
+.listForAddress{
+  flex-wrap: wrap;
+  margin: 0;
+  flex-direction: column;
+  gap: 10px;
+}
+  }
 @media(max-width:600px){
    .contact-detailsInfo input{
     width: 250px;
@@ -83,5 +134,11 @@ padding: 3rem;
     width: 250px;
     height: 100px;
 }
+.headingForfooter p{
+  text-align: center;
+  font-size: 10px;
+
+}
+ 
 }
 
