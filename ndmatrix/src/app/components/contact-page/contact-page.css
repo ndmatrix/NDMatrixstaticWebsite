@@ -39,20 +39,22 @@ padding-bottom: 3rem;
   gap: 3rem;
   margin-top: -70px;
   z-index: 1;
-  font-weight: 600;
-  font-size: 1.5rem;
+  /* font-weight: 600; */
+  font-size: 1.3rem;
+  color: rgb(39, 38, 38);
 }
 .EmailInfo ,.addressInfo{
   display: flex;
   flex-direction: column;
   gap: 1rem;
   align-items: center;
-  border: 1px solid rgb(211, 211, 211);
+  border: 1px solid transparent;
   padding: 1rem;
 margin: 1rem;
-width: 500px;
-height: 350px;
+width: 330px;
+height: 330px;
 background-color: white;
+border-radius: 12px;
 }
 .IconforContact i{
   font-size: 50px;
@@ -62,7 +64,7 @@ background-color: white;
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-150%, -30%);
+  transform: translate(-120%, -30%);
   color: white;
   text-align: center;
   padding: 1rem;
