@@ -14,23 +14,29 @@
     justify-content: center;
     flex-direction: column;
     align-items: center;
-margin-top: 3rem;    
+margin: 3rem 0;    
  }
   .careersHeroHead p{
-    font-size: 1rem;
-    margin: 1rem;
-    color: #6e6d6d;
+    font-size: 1.2rem;
+    margin: 1rem auto;
+    color: rgb(82, 80, 80);
     text-align: center;
+    width: 80%;
+  }
+  .mail-section{
+    font-size: 1.2rem;
+    color: black;
   }
  .career-content-container{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 1rem;
+    /* padding: 1rem; */
   margin: 0 auto;
   width: 100%;
   flex-wrap: wrap;
   gap: 2rem;
+  padding: 5px 0;
  }
  
 .career-text {
@@ -67,17 +73,12 @@ margin-top: 3rem;
   object-fit: cover;
   object-position: center;
 }
- hr{
-    width: 8%;
-    color: #414040;
-   
- }
  .headeingForCareer{
     text-align: center;
     color: #444491;
-    margin-bottom: 1rem;
  }
-
+ 
+/* 
  .findBtn button{
     padding: 10px 15px;
   align-items: center;
@@ -91,7 +92,6 @@ margin-top: 3rem;
   cursor: pointer;
   display: inline-flex;
   font-family: "JetBrains Mono",monospace;
-  /* height: 48px; */
   justify-content: center;
   line-height: 1;
   list-style: none;
@@ -122,7 +122,6 @@ margin-top: 3rem;
   transform: translateY(2px);
 }
 .flexofSearch{
-    /* width: 70%; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -201,7 +200,7 @@ margin-top: 3rem;
 box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
 border-color: rgb(130, 130, 245);
 } */
-.applyBtn{
+/* .applyBtn{
     text-align: right;
     margin-top: -60px;
 }
@@ -224,7 +223,8 @@ border-color: rgb(130, 130, 245);
 .job-titile h3{
     text-transform: capitalize;
     color: rgb(51, 13, 13);
-}
+}  */
+
 .animate-left {
   animation: slideInLeft 1s ease-out forwards;
   animation-delay: 0.2s;

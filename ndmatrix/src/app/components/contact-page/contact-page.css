@@ -54,7 +54,7 @@ margin: 1rem;
 width: 330px;
 height: 330px;
 background-color: white;
-border-radius: 12px;
+border-radius: 15px;
 }
 .IconforContact i{
   font-size: 50px;
@@ -131,6 +131,11 @@ background-color: white;
     width: 250px;
     height: 38px;
     
+}
+.EmailInfo ,.addressInfo{
+width: 250px;
+height: 250px;
+background-color: white;
 }
 .contact-detailsInfo textarea{
     width: 250px;
