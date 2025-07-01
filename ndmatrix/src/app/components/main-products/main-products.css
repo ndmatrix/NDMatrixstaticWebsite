@@ -4,8 +4,9 @@
   background-size: cover;
   position: relative;
   z-index: 1;
-  width: 100%;
-  height: 100%;
+  /* width: 100%;
+  height: 100%; */
+  /* background: linear-gradient(79deg, #dddddd, white, #dbdbdb); */
 }
 
 #productsPage {
@@ -19,7 +20,7 @@
   align-items: flex-start;
   width: 80%;
   margin: 0 auto;
-  padding: 3rem 0;
+  padding: 3rem 
 }
 /* .products-enter {
   opacity: 0;
@@ -59,6 +60,9 @@ border: 1px solid whitesmoke;
 padding: 2rem;
   margin: 1rem;
   /* box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1); */
+   opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
 }
 
 .cardsForFlex:hover {
@@ -69,15 +73,25 @@ padding: 2rem;
 /* Left-aligned (odd cards) */
 .cardsForFlex:nth-child(odd) {
   align-self: flex-start;
-  transform: translateX(10px);
+  transform: translateX(-100px);
 }
 
 /* Right-aligned (even cards) */
 .cardsForFlex:nth-child(even) {
   align-self: flex-end;
-  transform: translateX(-10px);
+  transform: translateX(100px);
+}
+/* Animate from left (odd) */
+.cardsForFlex:nth-child(odd).visible {
+  opacity: 1;
+  transform: translateX(0);
 }
 
+/* Animate from right (even) */
+.cardsForFlex:nth-child(even).visible {
+  opacity: 1;
+  transform: translateX(0);
+}
 .iconForCards i {
       font-size:50px;
     color: #2e2d86;
@@ -130,26 +144,28 @@ display: flex;
       color: rgb(112, 111, 111);
       text-align: center;
 }
-@media(max-width:780px){
+@media(max-width:768px){
    .products-cards-Container{
 gap: 1rem;
-align-items: center
+align-items: center;
 }
   .cardsForFlex {
     align-self: center !important;
     transform: translateX(0) !important;
+     transform: translateY(50px) !important;
     width: 90%; /* Optional: wider on small screens */
+  }
+   .cardsForFlex.visible {
+    transform: translateY(0) !important;
   }
 
 }
 @media(max-width:1050px){
-.products-cards-Container{
-width: 100%;
-gap: 1rem;
-
+.cardsForFlex{
+  width: 70%;
 }
 }
-@media(max-width:425px){
+@media(max-width:500px){
   .productsImgTitleInfo{
     flex-direction: column
   }

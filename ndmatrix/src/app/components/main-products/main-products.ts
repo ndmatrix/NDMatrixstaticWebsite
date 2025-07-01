@@ -1,5 +1,5 @@
 import { CommonModule, isPlatformBrowser } from '@angular/common';
-import { AfterViewInit, Component, ElementRef, Inject, PLATFORM_ID, ViewChild } from '@angular/core';
+import { AfterViewInit, Component, ElementRef, Inject, PLATFORM_ID, QueryList, ViewChild, ViewChildren, viewChildren } from '@angular/core';
 import { MainHeader } from '../main-header/main-header';
 import { MainFooter } from '../main-footer/main-footer';
 
@@ -12,44 +12,46 @@ import { MainFooter } from '../main-footer/main-footer';
 export class MainProducts implements AfterViewInit{
 
     constructor(@Inject(PLATFORM_ID) private platformId: Object) {}
-  @ViewChild('productsContainer', { static: false }) productsContainer!: ElementRef;
+@ViewChildren('cardElement') cardElements!: QueryList<ElementRef>;
 
-  ngAfterViewInit() {
-        if (isPlatformBrowser(this.platformId)) {
+ngAfterViewInit() {
+  if (isPlatformBrowser(this.platformId)) {
     const observer = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
+        const el = entry.target as HTMLElement;
         if (entry.isIntersecting) {
-          entry.target.classList.add('products-visible');
+          el.classList.add('visible');
         } else {
-          entry.target.classList.remove('products-visible');
+          el.classList.remove('visible');
         }
       });
     }, { threshold: 0.1 });
 
-    if (this.productsContainer?.nativeElement) {
-      observer.observe(this.productsContainer.nativeElement);
-    }
+    this.cardElements.forEach((card) => {
+      observer.observe(card.nativeElement);
+    });
   }
 }
 
+
 productCards = [
   {
-    title: "Online Test Series",
+    title: "Online Assessment System",
     discription: `A comprehensive platform where students can take subject-wise, full-length, and mock tests.`,
     productsIcon: "fa-solid fa-laptop-code"
   },
   {
-    title: "Online Recorded Lectures",
+    title: "E-learning Platform",
     discription: `A learning platform offering recorded lectures along with short quizzes/tests related to each video.`,
     productsIcon: "fa-solid fa-video"
   },
   {
-    title: "Practice Question Bank",
+    title: "Practice Hub",
     discription: `A flexible system for practicing questions with filters by topic and difficulty, plus detailed solutions.`,
     productsIcon: "fa-solid fa-book-open"
   },
   {
-    title: "Study Materials",
+    title: "EduNotes",
     discription: `A digital notebook with virtual study materials, highlighting, bookmarking, notes, and search.`,
     productsIcon: "fa-solid fa-book"
   },
@@ -74,7 +76,7 @@ productCards = [
     productsIcon: "fa-solid fa-user-shield"
   },
   {
-    title: "Bundle Project",
+    title: "Integrated Learning Platform",
     discription: `A unified platform combining OTS, ORVL, PQB, SM, LMS, and SMS for seamless use by institutes and learners.`,
     productsIcon: "fa-solid fa-layer-group"
   },

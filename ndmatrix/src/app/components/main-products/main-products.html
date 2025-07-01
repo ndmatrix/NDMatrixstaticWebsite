@@ -7,7 +7,7 @@
         <div  #productsContainer class="products-enter">
   
 <div class="products-cards-Container">
-  <div class="cardsForFlex" *ngFor="let cards of productCards">
+    <div class="cardsForFlex" *ngFor="let cards of productCards" #cardElement>
     <div class="productsImgTitleInfo">
       <div class="iconForCards">
         <i [class]="cards.productsIcon"></i>

@@ -39,7 +39,7 @@ color:whitesmoke;
     display: flex;
     justify-content: center;
     align-items: center;
-     margin: 10px;
+     margin-top: 2rem;
 }
 .headingFor-about h2{
     color: rgb(14, 14, 54);

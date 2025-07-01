@@ -60,12 +60,22 @@ a{
    color:white;
    text-decoration: underline;
 }
-.Footer-AddressInfo li{
-    list-style-type: none;
-    margin-top: 6px;
-        color: rgb(216, 216, 216);
 
+
+.Footer-AddressInfo li {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  margin-bottom: 0.5rem;
+  color: rgb(216, 216, 216);
 }
+
+.Footer-AddressInfo li i {
+  min-width: 20px;
+  text-align: center;
+}
+
 .list-headingforfooter{
         font-size: 20px;
     color: rgb(13, 39, 87);
