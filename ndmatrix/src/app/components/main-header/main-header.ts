@@ -28,7 +28,7 @@ export class MainHeader {
           this.route.fragment.subscribe(fragment => {
             if (fragment) {
               this.activeButton = fragment as typeof this.activeButton;
-              setTimeout(() => this.scrollToElement(fragment), 200);
+              setTimeout(() => this.scrollToElement(fragment), 0); // Ensure the DOM is ready before scrolling
             } else {
               // Fallback based on route (in case no fragment is present)
               switch (this.currentRoute) {
@@ -72,6 +72,7 @@ export class MainHeader {
     }
   }
 
+  
   toggleMenu(): void {
     this.isMenuOpen = !this.isMenuOpen;
   }

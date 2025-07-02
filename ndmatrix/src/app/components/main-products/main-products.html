@@ -1,25 +1,23 @@
 
  <div class="MainProctsHomePage-Container">
     <main-header></main-header>
+    
  <div class="mainProducts-container" >
+  <div  #productsContainer class="products-enter">
         <div class="headingFor-porducts"><i class="fa-solid fa-diamond"></i><i class="fa-solid fa-diamond"></i><i class="fa-solid fa-diamond"></i><h2>Our Products</h2><i class="fa-solid fa-diamond"></i><i class="fa-solid fa-diamond"></i><i class="fa-solid fa-diamond"></i></div>
- <p> nDMatrix provides a comprehensive suite of educational solutions, including test series, recorded lectures, question banks, study materials, and smart test generators. It also offers robust LMS, student management, admin portals, and integrated cloud services — all in one powerful platform.</p>
-        <div  #productsContainer class="products-enter">
-  
+ <p> nDMatrix offers a complete range of educational tools, including customizable test generators, unified learning platforms, and scalable cloud services — all seamlessly integrated into one powerful solution.</p> 
 <div class="products-cards-Container">
-    <div class="cardsForFlex" *ngFor="let cards of productCards" #cardElement>
-    <div class="productsImgTitleInfo">
+    <div class="cardsForFlex" *ngFor="let cards of productCards">
       <div class="iconForCards">
         <i [class]="cards.productsIcon"></i>
+          <h3 class="productsName">{{ cards.title }}</h3>
       </div>
-      <div class="productsdisInfo">
+      <div class="productsContent">
       <h3 class="productsName">{{ cards.title }}</h3>
        <div class="productsDiscription">{{ cards.discription }}</div>
     </div>
-    </div>
   </div>
 </div>
-
   </div>
      </div>
   <main-footer></main-footer>
