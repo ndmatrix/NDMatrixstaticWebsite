@@ -35,7 +35,7 @@ currentRoute: string = '';
     title:"Software Development Center",
     description:` We supports students and educators in building real-world applications we offer guided, project-based learning experiences.`,
  verticalImg:"images/softwareDev.jpg",
- route:"/software-development-center/productsPage"
+ route:"/software-development-center/products"
     }
   ]
 

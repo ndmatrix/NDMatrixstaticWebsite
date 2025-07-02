@@ -7,8 +7,8 @@ import { CareerPage } from './components/career-page/career-page';
 
 export const routes: Routes = [
     {path:'', component:NDMatrixHomePage},
-    {path:'ContactPage',component:ContactPage},
-     {path:'software-development-center/productsPage', component:MainProducts},
-     {path:'CareersPage', component:CareerPage}
+    {path:'Contact',component:ContactPage},
+     {path:'software-development-center/products', component:MainProducts},
+     {path:'Careers', component:CareerPage}
 
 ];
