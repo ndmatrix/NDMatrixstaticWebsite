@@ -53,7 +53,7 @@ color:whitesmoke;
 .about-content{
     width: 80%;
     text-align: justify;
-    margin: auto;
+    margin: 1rem auto;
     font-size: 1.2rem;
     color: rgb(75, 75, 75);
 }
@@ -129,5 +129,19 @@ border-width: 5px;
 }
 .aboutDescription{
     font-size: 15px;
+}
+.headingFor-about h2{
+    font-size: 20px;
+}
+
+.subHeadingForAbout{
+    font-size: 16px;
+}
+.aboutCard-title{
+    font-size: 1rem;
+}
+.cards-flex-about{
+    width: 250px;
+    height: 260px;
 }
 }

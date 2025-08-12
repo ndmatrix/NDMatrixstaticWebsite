@@ -18,7 +18,7 @@ currentRoute: string = '';
   verticals=[
     {
       title:"Aerospace Research Centre",
-      description:`nDMatrix builds high-performance in-house drone systems engineered for reliability, innovation, and use across diverse industries.`,
+      description:`nDMatrix builds high-performance in-house drone systems engineered for reliability, innovation and use across diverse industries.`,
       verticalImg:"images/drone.jpg",
     },
 //     {

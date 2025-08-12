@@ -19,7 +19,7 @@ aboutCards=[
   },
   {
     title:" Creative & Forward Thinking",
-    description:`At nDMatrix, we don't just build products, we create experiences powered by AI and advanced tech. Across various industries and dimensions, we combine creative thinking, and intelligent design  into the future.`
+    description:`At nDMatrix, we don't just build products, we create experiences powered by AI and advanced tech. Across various industries and dimensions, we combine creative thinking and intelligent design  into the future.`
   }
 ]
 

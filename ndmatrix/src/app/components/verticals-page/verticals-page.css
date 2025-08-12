@@ -125,12 +125,18 @@
   text-align: center;
 }
 .verticalsName {
-  font-size: 1.1rem;
+  /* font-size: 1.1rem; */
   /* font-weight: 500; */
   text-transform: capitalize;
   text-align: center;
   color: rgb(31, 20, 20);
   padding: 1rem;
+}
+.verticalsName h3{
+  font-size: 20px;
+}
+.verticalsName h3{
+  font-size: 20px;
 }
 .headingFor-verticals {
   text-align: center;
@@ -161,7 +167,13 @@ hyphens: auto;
     gap: 1rem;
     margin: 1rem;
   }
-  .verticalsDiscription {
-    font-size: 13px;
-  }
+  
+}
+@media (max-width: 600px) {
+.headingFor-verticals h2 {
+  font-size: 20px;
+}
+.verticalsName h3{
+  font-size: 18px;
+}
 }
