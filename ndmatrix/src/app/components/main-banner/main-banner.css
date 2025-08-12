@@ -52,7 +52,7 @@ color:whitesmoke;
 }
 .about-content{
     width: 80%;
-    text-align: center;
+    text-align: justify;
     margin: auto;
     font-size: 1.2rem;
     color: rgb(75, 75, 75);
@@ -100,12 +100,14 @@ border-width: 5px;
 }
 .aboutDescription{
     width: 100%;
-    text-align: center;
+    text-align: justify;
+    /* hyphens: auto; */
     white-space: normal;
     overflow-wrap: break-word;
     /* word-spacing: 6px; */
     color: rgb(75, 75, 75);
     font-size: 1rem;
+    ;
 }
 
 @media(max-width:1440px)  {

@@ -17,25 +17,25 @@ export class VerticalsPage {
 currentRoute: string = '';
   verticals=[
     {
-      title:"Aerospace/Mechanical",
-      description:`nDMatrix provides advanced tools and learning resources for  students, educators, and professionals aiming for industry readiness.`,
+      title:"Aerospace Research Center",
+      description:`nDMatrix builds high-performance in-house drone systems engineered for reliability, innovation, and use across diverse industries.`,
       verticalImg:"images/aerospace.jpg",
     },
-    {
-    title:"Robotics/Mechatronics",
-    description:`We offers hands-on learning tools and real-world project support in Robotics and Mechatronics,We empower students to design, simulate skills.`,
- verticalImg:"images/robotic.jpg",
-    },
-     {
-    title:"AI/ML Software Tools",
-    description:`We provides AI/ML tools and learning modules tailored for practical implementation and academic growth.`,
- verticalImg:"images/mlalogorithm.jpg",
-    },
+//     {
+//     title:"Robotics/Mechatronics",
+//     description:`We offers hands-on learning tools and real-world project support in Robotics and Mechatronics,We empower students to design, simulate skills.`,
+//  verticalImg:"images/robotic.jpg",
+//     },
+//      {
+//     title:"AI/ML Software Tools",
+//     description:`We provides AI/ML tools and learning modules tailored for practical implementation and academic growth.`,
+//  verticalImg:"images/mlalogorithm.jpg",
+//     },
      {
     title:"Software Development Center",
-    description:` We supports students and educators in building real-world applications we offer guided, project-based learning experiences.`,
+    description:`We specialize in developing innovative EdTech tools and robust core software development products.`,
  verticalImg:"images/softwareDev.jpg",
- route:"/software-development-center/products"
+//  route:"/software-development-center/products"
     }
   ]
 

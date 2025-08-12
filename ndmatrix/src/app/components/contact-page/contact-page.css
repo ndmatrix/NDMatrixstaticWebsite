@@ -13,6 +13,14 @@ padding-bottom: 3rem;
        display: none;
     font-size: 3rem;
 }
+.div-containerFlex{
+line-height: 40px;
+  text-align: justify;
+
+}
+.divst-heading{
+  text-align: center;
+}
 .contact-detailsInfo{
     display: flex;
     flex-direction: column;
@@ -57,7 +65,7 @@ background-color: white;
 border-radius: 15px;
 }
 .Email-addressInfo i{
-  padding: 0 10px;
+  padding-right: 10px;
 }
 .IconforContact i{
   font-size: 50px;
@@ -98,6 +106,11 @@ margin: 1rem;
 width: 300px;
 height: 250px;
 background-color: white;
+}
+.div-containerFlex{
+line-height: 30px;
+  text-align: justify;
+
 }
    .listForAddress{
   font-size: 1rem;
