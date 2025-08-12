@@ -17,9 +17,9 @@ export class VerticalsPage {
 currentRoute: string = '';
   verticals=[
     {
-      title:"Aerospace Research Center",
+      title:"Aerospace Research Centre",
       description:`nDMatrix builds high-performance in-house drone systems engineered for reliability, innovation, and use across diverse industries.`,
-      verticalImg:"images/aerospace.jpg",
+      verticalImg:"images/drone.jpg",
     },
 //     {
 //     title:"Robotics/Mechatronics",
@@ -32,7 +32,7 @@ currentRoute: string = '';
 //  verticalImg:"images/mlalogorithm.jpg",
 //     },
      {
-    title:"Software Development Center",
+    title:"Software Development Centre",
     description:`We specialize in developing innovative EdTech tools and robust core software development products.`,
  verticalImg:"images/softwareDev.jpg",
 //  route:"/software-development-center/products"

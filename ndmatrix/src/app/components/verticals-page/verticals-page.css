@@ -47,8 +47,8 @@
   z-index: 2;
 }
 .imageForCards {
-  width: 100%;
-  height: auto;
+  width: 300px;
+  height: 200px;
 }
 .imageForCards img {
   width: 100%;
@@ -75,6 +75,7 @@
   height: 300px;
   transition: transform 0.3s ease;
   cursor: pointer;
+  margin: 1rem;
 }
 .verticalsImgTitleInfo,
 .verticalsInfo {
@@ -150,8 +151,8 @@
 .verticalsDiscription {
   width: 100%;
   padding: 0 1rem;
-  white-space: normal;
-  overflow-wrap: break-word;
+text-align: justify;
+hyphens: auto;
   color: rgb(112, 111, 111);
   font-size: 1rem;
 }

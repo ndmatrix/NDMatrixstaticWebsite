@@ -16,6 +16,7 @@ padding-bottom: 3rem;
 .div-containerFlex{
 line-height: 40px;
   text-align: justify;
+  padding: 0 2rem;
 
 }
 .divst-heading{
@@ -159,7 +160,7 @@ background-color: white;
 }
 .headingForfooter p{
   text-align: center;
-  font-size: 10px;
+  font-size: 9px;
 
 }
  
